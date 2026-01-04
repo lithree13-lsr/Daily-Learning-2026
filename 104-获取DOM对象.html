@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box"></div> -->
+    <ul class="nav">
+        <li>Test1</li>
+        <li>Test2</li>
+        <li>Test3</li>
+    </ul>
+    <script>
+        // const box = document.querySelector('div')
+        // console.log(box)
+        // const li = document.querySelector('ul li:first-child')
+        // console.log(li)
+        // 1.获取元素
+        const lis = document.querySelectorAll('.nav li')
+        for(let i = 0; i < lis.length; i++){
+            console.log(lis[i])
+        }
+    </script>
+</body>
+
+</html>

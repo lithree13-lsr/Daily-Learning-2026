@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.随机生成一个1～10的数字
+        function getRandom(N, M){
+            return Math.floor(Math.random() * (M - N + 1)) + N
+        }
+        let random = getRandom(1, 10)
+        console.log(random)
+
+        // 2. 用户输入
+      let flag = true
+      for (let i = 1; i <= 3; i++) {
+        let num = +prompt('Please type a number from 1~10:')
+        if (num > random){
+            alert('too big, keep playing')
+        } else if (num < random){
+            alert('too small, keep working')
+        } else {
+            flag = false
+            alert('Bingo')
+            break
+        }
+      }
+       if (flag) {
+        alert('no choice')
+       }
+    </script>
+</body>
+</html>
