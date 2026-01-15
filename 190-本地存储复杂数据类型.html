@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            uname: 'SAM',
+            age: 19,
+            gender:'male'
+        }
+
+        // 复杂数据类型必须先转换为json字符串存储
+        localStorage.setItem('obj', JSON.stringify(obj))
+        //load
+        // alert(localStorage.getItem('obj'))
+        // console.log(localStorage.getItem('obj'))
+
+        // json字符串如何转换回数据
+       console.log(JSON.parse(localStorage.getItem('obj')))
+    </script>
+</body>
+</html>
